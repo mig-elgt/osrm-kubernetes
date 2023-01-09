@@ -1,0 +1,11 @@
+apiVersion: v1
+appVersion: "1.0"
+description: A Helm chart to run a OSRM server
+name: osrm-server-car
+version: 0.1.0
+keywords:
+  - backend
+  - osrm-project
+mantainers:
+  - name: Miguel Angel Galicia
+

@@ -1,0 +1,36 @@
+image:
+  # Default hub for users images.
+  # Releases are published to gcr hub under 'foobar' project.
+  hub: gcr.io/foobar
+  # Default tag for Users images.
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  externalPort: 8080
+  internalPort: 5000
+  name: http
+
+labels:
+  tier: backend
+  environment: production
+
+minReadySeconds: 30
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 1
+    maxUnavailable: 0
+
+probes:
+  enabled: true
+  readiness:
+    initialDelaySeconds: 50
+    periodSeconds: 10
+
+osrm:
+  builder:
+    version: osrm-server-car-v1599933468
