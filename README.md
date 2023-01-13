@@ -2,6 +2,8 @@
 
 OSRM Kubernetes Helm Chart to Deploy OSRM Server using car profile as default. The Dockerfile specification in this project uses the OSRM Fetcher image. Before to run OSRM Server, fetcher binary will be exec to fetch OSRM Files from Google Storage. OSRM Server needs these files to run the server. Take a look the [OSRM Project](https://github.com/Project-OSRM/osrm-backend/wiki) doc.
 
+![Kubernetes](.osrm.png)
+
 ### Requirements
 
 * Create a Secret Object in kubernetes with a Google Service Account file to read Bucket Objects.
