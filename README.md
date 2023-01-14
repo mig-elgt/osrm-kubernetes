@@ -1,6 +1,6 @@
 # OSRM Kubernetes
 
-OSRM Kubernetes is a Helm Chart to Deploy OSRM Server using car profile as default. The Dockerfile specification in this project uses the [OSRM Fetcher](https://github.com/mig-elgt/osrm-fetcher) image. Before to run OSRM Server, fetcher binary will be exec to fetch the OSRM Files from Google Storage. OSRM Server needs these files in order to run the server. Take a look the [OSRM Project](https://github.com/Project-OSRM/osrm-backend/wiki) doc.
+OSRM Kubernetes is a Helm Chart to Deploy OSRM Server using car profile as default. The Dockerfile specification in this project uses the [OSRM Fetcher](https://github.com/mig-elgt/osrm-fetcher) image. Before to run OSRM Server, fetcher binary will get OSRM Files from Google Storage. OSRM Server needs these files in order to run the server. Take a look the [OSRM Project](https://github.com/Project-OSRM/osrm-backend/wiki) for more details.
 
 ![Kubernetes](./osrm.png)
 
